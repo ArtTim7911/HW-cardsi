@@ -1,0 +1,90 @@
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind test page</title> 
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-800">
+
+    <main class="mx-auto max-w-6xl px-4 py-12">
+
+        <h1 class="mb-8 text-center text-3xl font-bold tracking-wide text-slate-700">
+            Наші картки
+        </h1>
+
+        <section
+            class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+            aria-label="Три картки"
+        >
+
+            <article class="flex flex-col rounded-xl bg-white p-6 custom-shadow transition duration-300 hover:shadow-lg">
+                <h2 class="mb-3 text-xl font-semibold text-blue-600">
+                    Картка 1
+                </h2>
+
+                <p class="mb-5 flex-grow leading-relaxed text-slate-600">
+                    Це опис першої картки.
+                    Тут можна розмістити інформацію
+                    про товар, послугу або проєкт.
+                </p>
+
+
+                <a
+                    href="#"
+                    class="self-start rounded-lg bg-blue-600 px-4 py-2
+                           font-medium text-white hover:bg-blue-700 transition"
+                >
+                    Дізнатися більше
+                </a>
+            </article>
+
+            <article class="flex flex-col rounded-xl bg-white p-6 custom-shadow transition duration-300 hover:shadow-lg">
+                <h2 class="mb-3 text-xl font-semibold text-blue-600">
+                    Картка 2
+                </h2>
+
+                <p class="mb-5 flex-grow leading-relaxed text-slate-600">
+                    Це опис другої картки.
+                    Сітка автоматично змінює кількість
+                    колонок залежно від ширини екрана.
+                </p>
+
+                <a
+                    href="#"
+                    class="self-start rounded-lg bg-blue-600 px-4 py-2
+                           font-medium text-white hover:bg-blue-700 transition"
+                >
+                    Дізнатися більше
+                </a>
+            </article>
+
+            <article class="flex flex-col rounded-xl bg-white p-6 custom-shadow transition duration-300 hover:shadow-lg">
+                <h2 class="mb-3 text-xl font-semibold text-blue-600">
+                    Картка 3
+                </h2>
+
+                <p class="mb-5 flex-grow leading-relaxed text-slate-600">
+                    Це опис третьої картки.
+                    На великих екранах усі три картки
+                    розташовуються в одному рядку.
+                </p>
+
+                <a
+                    href="#"
+                    class="self-start rounded-lg bg-blue-600 px-4 py-2
+                           font-medium text-white hover:bg-blue-700 transition"
+                >
+                    Дізнатися більше
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
